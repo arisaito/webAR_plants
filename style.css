@@ -1,0 +1,36 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#loading {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none;
+}
+
+#loading_bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    font-size: 3vh;
+    background-color: white;
+    padding: 5vh;
+    pointer-events: auto;
+}
+#loading_ui {
+
+}
+
+#arjsDebugUIContainer {
+    display: none;
+}
+
