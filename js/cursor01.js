@@ -17,5 +17,6 @@ document.querySelector("#target").addEventListener("click", function(evt) {
     console.log("click");
     lastIndex = (lastIndex + 1) % shape.length;
     target.innerHTML = shape[lastIndex];
+    start = false;
   }
 });
