@@ -3,9 +3,9 @@ const cursor = document.getElementById("cursor");
 const target = document.getElementById("target");
 
 let shape = [
-  '<a-sphere radius="0.8" color="pink"></a-sphere>',
-  '<a-icosahedron color="#fee981"></a-icosahedron>',
-  '<a-box rotation="30 30 0" color="skyblue"></a-box>'
+  '<a-octahedron radius="0.8" color="pink" animation="property: rotation; to: 0 360 0; loop: false; dur: 1000; easing: linear; easing: easeOutCubic"></a-octahedron>',
+  '<a-icosahedron color="#fee981" animation="property: rotation; to: 0 360 0; loop: false; dur: 1000; easing: linear; easing: easeOutCubic"></a-icosahedron>',
+  '<a-box rotation="30 30 0" color="skyblue" animation="property: rotation; to: 0 360 0; loop: false; dur: 1000; easing: linear; easing: easeOutCubic"></a-box>'
 ];
 let lastIndex = -1;
 
