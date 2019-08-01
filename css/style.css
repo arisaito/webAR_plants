@@ -3,6 +3,33 @@ body {
     overflow: hidden;
 }
 
+.star {
+    animation: kirakira 8s linear;
+    color: rgba(235, 88, 247, 0.2);
+    display: inline-block;
+    height: 1em;
+    line-height: 1em;
+    position: fixed;
+    top: -1em;
+    z-index: 1000;
+}
+
+@keyframes kirakira {
+    0% {
+        transform:translateY(0) ;
+    }
+    100% {
+        transform:translateY(calc(100vh + 1em));
+    }
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
 #loading {
     display: block;
     position: absolute;

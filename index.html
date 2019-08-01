@@ -13,21 +13,25 @@
     <title>untitled</title>
   </head>
   <body>
-    <audio src="src/audio/ bubble.mp3" autoplay loop></audio>
+    <!-- <audio src="src/audio/ bubble.mp3" autoplay loop></audio> -->
     <a-scene vr-mode-ui="enabled:false" embedded arjs>
-      <a-assets> </a-assets>
+      <a-assets>
+        <a-asset-item id="kurage-obj" src="src/gltf/scene.gltf"></a-asset-item>
+      </a-assets>
       <a-entity camera look-controls wasd-controls mouse-cursor>
         <a-entity id="cursor" cursor="rayOrigin: mouse;"> </a-entity>
       </a-entity>
+
       <a-entity
         id="target"
         cursor-listener
-        position="0 3 -10"
-        animation="property: position; from: 0 2 -10; to: 0 -1 -10; dir: alternate; loop: true; easing: easeInOutCubic; dur: 3000;"
+        position="0 0 -5"
+        animation="property: position; from: 0 -3 -7; to: 0 -5 -7; dir: alternate; loop: true; easing: easeInOutCubic; dur: 3000;"
       >
-        <a-box id="box" rotation="30 30 0" color="skyblue"> </a-box>
+        <a-gltf-model src="#kurage-obj" scale="3 3 3"></a-gltf-model>
       </a-entity>
     </a-scene>
     <script src="js/cursor01.js"></script>
+    <script src="js/bubble.js"></script>
   </body>
 </html>
