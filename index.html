@@ -19,8 +19,16 @@
     <a-scene vr-mode-ui="enabled:false" embedded arjs>
       <a-assets>
         <a-asset-item
-          id="kurage-obj"
-          src="src/gltf2/inunun.gltf"
+          id="kurage01"
+          src="src/chibi/01/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="kurage02"
+          src="src/chibi/02/model.gltf"
+        ></a-asset-item>
+        <a-asset-item
+          id="kurage03"
+          src="src/chibi/03/model.gltf"
         ></a-asset-item>
       </a-assets>
 
@@ -34,20 +42,22 @@
         >
           <a-gltf-model
             scale="0.03 0.03 0.03"
-            src="#kurage-obj"
+            src="#kurage01"
             class="kurage"
             rotation="-90 0 0 "
           ></a-gltf-model>
         </a-entity>
       </a-entity>
+
       <!-- ここから不可テスト -->
+
       <a-entity cursor-listener random-position="min: -5 0 -6; max: 5 0 -6">
         <a-entity
           animation="property: position; from: 0 -1 0; to: 0 1 0; dir: alternate; loop: true; easing: easeInOutCubic; dur: 3000;"
         >
           <a-gltf-model
             scale="0.03 0.03 0.03"
-            src="#kurage-obj"
+            src="#kurage02"
             class="kurage"
             rotation="-90 0 0 "
           ></a-gltf-model>
@@ -60,20 +70,7 @@
         >
           <a-gltf-model
             scale="0.03 0.03 0.03"
-            src="#kurage-obj"
-            class="kurage"
-            rotation="-90 0 0 "
-          ></a-gltf-model>
-        </a-entity>
-      </a-entity>
-
-      <a-entity cursor-listener random-position="min: -5 0 -6; max: 5 0 -6">
-        <a-entity
-          animation="property: position; from: 0 -1 0; to: 0 1 0; dir: alternate; loop: true; easing: easeInOutCubic; dur: 3000;"
-        >
-          <a-gltf-model
-            scale="0.03 0.03 0.03"
-            src="#kurage-obj"
+            src="#kurage03"
             class="kurage"
             rotation="-90 0 0 "
           ></a-gltf-model>
